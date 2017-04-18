@@ -49,3 +49,16 @@
     - 512 bits block: (message+padding)/512
     - IV(256 bits) + block1 --> c + block2 --> ... --> c --> Hash
           
+# Hash function
+- long sentence --> short sentence
+- hard to go backwards
+- Non-cryptographic hash function
+  - CRC(cyclic redundancy check)
+    - + four 0s, and using XOR
+    - ex) CRC checksum
+- Cryptographic hash function
+  - multiple round: for avalnche effect
+  - general rule
+    - salt + password --> n * hash function --> salt + hash result
+- SHA-256
+  - developed in 2001 by NSA
